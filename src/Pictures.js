@@ -8,7 +8,7 @@ class Pictures extends Component {
                 <div>
                     <h2>Kuvia</h2>
                     <p>Alla herkullisia kuvia</p>
-                    <img src={pic1} className="burger1-kuva" alt="pic1" height={300}/>
+                    <img src={pic1} className="burger1-kuva" alt="pic1" height={400}/>
                 </div>
             </div>
         );

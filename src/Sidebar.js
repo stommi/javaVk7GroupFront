@@ -15,7 +15,7 @@ const routes = [
         path: "/",
         exact: true,
         sidebar: () => <div>Etusivu</div>,
-        main: () => <Home/>,
+        main: () => <Home/>
 
     },
     {
@@ -37,19 +37,19 @@ export default function SidebarExample() {
                 <div
                     style={{
                         padding: "10px",
-                        width: "40%",
-                        background: "yellow"
+                        // width: "40%",
+                        background: "#eed5b4",
                     }}
                 >
-                    <ul style={{ listStyleType: "none", padding: 0 }}>
+                    <ul className="sidebarLinks">
                         <li>
-                            <Link to="/">Etusivu</Link>
+                            <Link to="/">ETUSIVU</Link>
                         </li>
                         <li>
-                            <Link to="/editing">Muokkaus</Link>
+                            <Link to="/editing">MUOKKAUS</Link>
                         </li>
                         <li>
-                            <Link to="/pictures">Kuvia</Link>
+                            <Link to="/pictures">KUVIA</Link>
                         </li>
                     </ul>
 
