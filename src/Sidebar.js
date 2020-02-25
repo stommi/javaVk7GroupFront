@@ -30,7 +30,7 @@ const routes = [
     }
 ];
 
-export default function SidebarExample() {
+export default function SidebarLeft() {
     return (
         <Router>
             <div className="sidebar" style={{ display: "flex" }}>
@@ -38,7 +38,7 @@ export default function SidebarExample() {
                     style={{
                         padding: "10px",
                         // width: "40%",
-                        background: "#eed5b4",
+                        background: "lightgray",
                     }}
                 >
                     <ul className="sidebarLinks">
@@ -66,7 +66,7 @@ export default function SidebarExample() {
                     </Switch>
                 </div>
 
-                <div style={{ flex: 1, padding: "80px" }}>
+                <div style={{ flex: 1, padding: "30px" }}>
                     <Switch>
                         {routes.map((route, index) => (
 
