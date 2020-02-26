@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="39f103ac-ae67-45ff-bab0-aac580099dd7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -50,6 +52,16 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="install" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="install" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -60,6 +72,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.install" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -87,7 +104,7 @@
       <workItem from="1582619044843" duration="112000" />
       <workItem from="1582619336491" duration="21000" />
       <workItem from="1582619514301" duration="114000" />
-      <workItem from="1582619703755" duration="19927000" />
+      <workItem from="1582619703755" duration="24562000" />
     </task>
     <servers />
   </component>
@@ -99,22 +116,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="114" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582641512774" />
-    <state width="723" height="210" key="GridCell.Tab.0.bottom" timestamp="1582661591282">
+    <state width="1017" height="210" key="GridCell.Tab.0.bottom" timestamp="1582704497680">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582661591282" />
-    <state width="723" height="210" key="GridCell.Tab.0.center" timestamp="1582661591281">
+    <state width="1017" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582704497680" />
+    <state width="1017" height="210" key="GridCell.Tab.0.center" timestamp="1582704497680">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582661591281" />
-    <state width="723" height="210" key="GridCell.Tab.0.left" timestamp="1582661591281">
+    <state width="1017" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582704497680" />
+    <state width="1017" height="210" key="GridCell.Tab.0.left" timestamp="1582704497680">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582661591281" />
-    <state width="723" height="210" key="GridCell.Tab.0.right" timestamp="1582661591282">
+    <state width="1017" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582704497680" />
+    <state width="1017" height="210" key="GridCell.Tab.0.right" timestamp="1582704497680">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582661591282" />
+    <state width="1017" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582704497680" />
     <state x="439" y="112" key="NewModule_or_Project.wizard" timestamp="1582619973871">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
