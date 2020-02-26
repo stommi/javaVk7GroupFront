@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './donut.png';
-import './App.css';
+import './styles/App.css';
+import Sidebar from "./Sidebar";
+import Navbartesti from "./components/navbar/Navbartesti";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <div className="App">
+            <header className="App-header">
+
+                <Sidebar/>
+                <Navbartesti/>
+
+            </header>
+        </div>
+    );
 }
 
 export default App;

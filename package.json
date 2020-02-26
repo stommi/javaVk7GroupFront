@@ -8,13 +8,17 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0"
+    "react-router-dom": "latest",
+    "react-scripts": "3.4.0",
+    "react-spring": "^8.0.27",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "install": "npm install styled-components react-spring"
   },
   "eslintConfig": {
     "extends": "react-app"

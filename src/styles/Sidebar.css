@@ -1,0 +1,35 @@
+.sidebar {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    transition: left .3s ease-in-out;
+    background-color: white;
+    color: #2d545e;
+}
+
+.sidebarLinks {
+    list-style: none;
+    padding: 10px;
+    font-size: 70%;
+}
+
+.sidebarLinks :link {
+    color: #2d545e;
+    text-decoration: none;
+}
+
+.sidebarLinks :visited {
+    color: #2d545e;
+}
+
+.sidebarLinks :hover {
+    color: #2d545e;
+    background-color: white;
+}
+
+.sidebarLinks :active {
+    /*font-weight: bold;*/
+    background-color: white;
+}
