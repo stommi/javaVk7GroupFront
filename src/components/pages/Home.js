@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from "./donut.png";
+import logo from "../../pictures/donut.png";
 
 class Home extends Component {
     render() {

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 
-import pic2 from "../../donut.png";
+import pic2 from "../../pictures/donut.png";
 
 const Brand = () => {
     return (

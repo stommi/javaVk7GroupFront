@@ -5,10 +5,10 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import './Sidebar.css';
-import Home from "./Home";
-import Editing from "./Editing";
-import Pictures from "./Pictures";
+import './styles/Sidebar.css';
+import Home from "./components/pages/Home";
+import Editing from "./components/pages/Editing";
+import Pictures from "./components/pages/Pictures";
 
 const routes = [
     {

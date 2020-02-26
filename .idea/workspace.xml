@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="39f103ac-ae67-45ff-bab0-aac580099dd7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Editing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Editing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pictures.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Pictures.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Brand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/donut.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/donut.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/logo.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +53,13 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\academy\viikko7\javavk7groupfront\src\pictures" />
+      <recent name="C:\academy\viikko7\javavk7groupfront\src\styles" />
+      <recent name="C:\academy\viikko7\javavk7groupfront\src\components\pages" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -104,7 +117,7 @@
       <workItem from="1582619044843" duration="112000" />
       <workItem from="1582619336491" duration="21000" />
       <workItem from="1582619514301" duration="114000" />
-      <workItem from="1582619703755" duration="24562000" />
+      <workItem from="1582619703755" duration="25448000" />
     </task>
     <servers />
   </component>
@@ -116,22 +129,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="114" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582641512774" />
-    <state width="1017" height="210" key="GridCell.Tab.0.bottom" timestamp="1582704497680">
+    <state width="1105" height="210" key="GridCell.Tab.0.bottom" timestamp="1582705980898">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1017" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582704497680" />
-    <state width="1017" height="210" key="GridCell.Tab.0.center" timestamp="1582704497680">
+    <state width="1105" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582705980898" />
+    <state width="1105" height="210" key="GridCell.Tab.0.center" timestamp="1582705980898">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1017" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582704497680" />
-    <state width="1017" height="210" key="GridCell.Tab.0.left" timestamp="1582704497680">
+    <state width="1105" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582705980898" />
+    <state width="1105" height="210" key="GridCell.Tab.0.left" timestamp="1582705980898">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1017" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582704497680" />
-    <state width="1017" height="210" key="GridCell.Tab.0.right" timestamp="1582704497680">
+    <state width="1105" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582705980898" />
+    <state width="1105" height="210" key="GridCell.Tab.0.right" timestamp="1582705980898">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1017" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582704497680" />
+    <state width="1105" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582705980898" />
     <state x="439" y="112" key="NewModule_or_Project.wizard" timestamp="1582619973871">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
