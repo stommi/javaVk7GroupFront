@@ -5,11 +5,13 @@ class Pictures extends Component {
     render() {
         return (
             <div>
-                <div>
                     <h2>Kuvia</h2>
                     <p>Alla herkullisia kuvia</p>
                     <img src={pic1} className="burger1-kuva" alt="pic1" height={400}/>
-                </div>
+                    <br/>
+                    <img src={pic1} className="burger1-kuva" alt="pic1" height={400}/>
+                    <br/>
+                    <img src={pic1} className="burger1-kuva" alt="pic1" height={400}/>
             </div>
         );
     }

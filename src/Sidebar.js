@@ -9,6 +9,7 @@ import './styles/Sidebar.css';
 import Home from "./components/pages/Home";
 import Editing from "./components/pages/Editing";
 import Pictures from "./components/pages/Pictures";
+import Find from "./components/pages/Find";
 
 const routes = [
     {
@@ -27,6 +28,11 @@ const routes = [
         path: "/pictures",
         sidebar: () => <div>Kuvia</div>,
         main: () => <Pictures/>
+    },
+    {
+        path: "/find",
+        sidebar: () => <div>Hae</div>,
+        main: () => <Find/>
     }
 ];
 
@@ -34,11 +40,10 @@ export default function SidebarLeft() {
     return (
         <Router>
             <div className="sidebar" style={{ display: "flex" }}>
-                <div
+                <div className="sidebartesti"
                     style={{
                         padding: "10px",
-                        // width: "40%",
-                        background: "lightgray",
+                        background: "#ffa500",
                     }}
                 >
                     <ul className="sidebarLinks">
@@ -50,6 +55,9 @@ export default function SidebarLeft() {
                         </li>
                         <li>
                             <Link to="/pictures">KUVIA</Link>
+                        </li>
+                        <li>
+                            <Link to="/find">HAE</Link>
                         </li>
                     </ul>
 
@@ -66,7 +74,7 @@ export default function SidebarLeft() {
                     </Switch>
                 </div>
 
-                <div style={{ flex: 1, padding: "30px" }}>
+                <div style={{ flex: 1, padding: "30px" }} className="sidebarPages">
                     <Switch>
                         {routes.map((route, index) => (
 
