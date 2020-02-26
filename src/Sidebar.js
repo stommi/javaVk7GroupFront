@@ -10,28 +10,36 @@ import Home from "./components/pages/Home";
 import Editing from "./components/pages/Editing";
 import Pictures from "./components/pages/Pictures";
 import Find from "./components/pages/Find";
+import Recipes from "./components/pages/Recipes";
 
 const routes = [
     {
         path: "/",
         exact: true,
-        sidebar: () => <div>Etusivu</div>,
+        sidebar: () => <div className={"activePage"}>Etusivu</div>,
         main: () => <Home/>
 
     },
+
+    {
+        path: "/recipes",
+        sidebar: () => <div className={"activePage"}>Reseptit</div>,
+        main: () => <Recipes/>
+    },
+
     {
         path: "/editing",
-        sidebar: () => <div>Muokkaus</div>,
+        sidebar: () => <div className={"activePage"}>Muokkaus</div>,
         main: () => <Editing/>
     },
     {
         path: "/pictures",
-        sidebar: () => <div>Kuvia</div>,
+        sidebar: () => <div className={"activePage"}>Kuvia</div>,
         main: () => <Pictures/>
     },
     {
         path: "/find",
-        sidebar: () => <div>Hae</div>,
+        sidebar: () => <div className={"activePage"}>Hae</div>,
         main: () => <Find/>
     }
 ];
@@ -49,6 +57,9 @@ export default function SidebarLeft() {
                     <ul className="sidebarLinks">
                         <li>
                             <Link to="/">ETUSIVU</Link>
+                        </li>
+                        <li>
+                            <Link to="/recipes">RESEPTIT</Link>
                         </li>
                         <li>
                             <Link to="/editing">MUOKKAUS</Link>

@@ -11,6 +11,11 @@
     background-color: white;
     color: #2d545e;
 }
+.activePage {
+    font-size: 50%;
+    font-weight: bold;
+    color: white;
+}
 
 .sidebarLinks {
     list-style: none;
