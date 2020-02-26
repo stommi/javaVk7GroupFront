@@ -85,7 +85,7 @@ export default function SidebarLeft() {
                     </Switch>
                 </div>
 
-                <div style={{ flex: 1, padding: "30px" }} className="sidebarPages">
+                <div style={{ flex: 1, padding: "30px", overflow: "scroll"}} className="sidebarPages">
                     <Switch>
                         {routes.map((route, index) => (
 

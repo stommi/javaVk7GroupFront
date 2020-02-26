@@ -1,12 +1,11 @@
 .sidebar {
-    position: relative;
+    position: fixed;
     top: 50px;
     left: 0;
     right: 0;
     bottom: 0;
     height: 100%;
     width: 80%;
-    min-height: 2500px;
     transition: left .3s ease-in-out;
     background-color: white;
     color: #2d545e;
