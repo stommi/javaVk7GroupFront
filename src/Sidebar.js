@@ -51,7 +51,7 @@ export default function SidebarLeft() {
                 <div className="sidebartesti"
                     style={{
                         padding: "10px",
-                        background: "rgba(255, 130, 11, 0.9)",
+                        background: "#84907f"
                     }}
                 >
                     <ul className="sidebarLinks">

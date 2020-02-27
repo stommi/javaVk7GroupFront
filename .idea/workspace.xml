@@ -4,11 +4,8 @@
     <list default="true" id="39f103ac-ae67-45ff-bab0-aac580099dd7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Brand.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Editing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Editing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/post/PostRecipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/PostRecipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Sidebar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import '../../styles/editingTable.css';
+import '../../styles/meme.css';
 
 class PostRecipe extends Component {
     constructor() {
@@ -18,15 +19,21 @@ class PostRecipe extends Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    handleSubmit() {
-        this.addRecipe().then(() => {
-            this.addIngredients();
-        })
-        this.setState({kiitos:"Kiitos reseptistä!"})
+
+        handleSubmit() {
+            this.addRecipe().then(() => {
+                this.addIngredients();
+            })
+            this.setState({
+                kiitos: <div className="meme">
+                    <img src="https://i0.wp.com/austinfoodmagazine.com/wp-content/uploads/2016/01/Gordon-Ramsay-shouting-011.jpg?fit=667%2C400" alt="" />
+                    <h2 className="top">Kuka helvitissä laittaa {this.state.ingredientName[0]}?</h2>
+                    <h2 className="bottom">{this.state.name} ohjeseen?</h2>
+                </div>
+            })
+        }
 
 
-
-    }
 
     addRecipe() {
         const url = "http://localhost:8080/api/recipes"
