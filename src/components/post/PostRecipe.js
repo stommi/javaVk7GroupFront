@@ -1,29 +1,40 @@
 import React, {Component} from "react";
+import '../../styles/editingTable.css';
+
 class PostRecipe extends Component {
     constructor() {
         super();
         this.state = {
             name: "",
             ingredientAmount: [],
-            ingredientMeasureType:[],
-            ingredientName:[],
+            ingredientMeasureType: [],
+            ingredientName: [],
             preparationTime: "",
-            preparationInstructions: ""
-
+            preparationInstructions: "",
+            kiitos: ""
 
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
     }
-    handleSubmit(){
-        this.addRecipe().then(()=>{
+
+    handleSubmit() {
+        this.addRecipe().then(() => {
             this.addIngredients();
         })
+        this.setState({kiitos:"Kiitos reseptistä!"})
+
+
 
     }
-    addRecipe(){
+
+    addRecipe() {
         const url = "http://localhost:8080/api/recipes"
-        const reccipeAsJson = JSON.stringify({name: this.state.name, preparationTime: this.state.preparationTime, preparationInstructions: this.state.preparationInstructions})
+        const reccipeAsJson = JSON.stringify({
+            name: this.state.name,
+            preparationTime: this.state.preparationTime,
+            preparationInstructions: this.state.preparationInstructions
+        })
         console.log(reccipeAsJson)
         return fetch(url, {
             method: 'POST',
@@ -35,16 +46,17 @@ class PostRecipe extends Component {
         })
 
     }
-    addIngredients(){
+
+    addIngredients() {
         var index = 0;
         var ingredients = []
-        while(index<this.state.ingredientName.length){
+        while (index < this.state.ingredientName.length) {
             var name = this.state.ingredientName[index]
             var amount = this.state.ingredientAmount[index]
             var measureType = this.state.ingredientMeasureType[index]
-            var ingredient = {name:  name, amount: amount, unit: measureType}
+            var ingredient = {name: name, amount: amount, unit: measureType}
             ingredients.push(ingredient)
-            console.log("Ingredient = "+JSON.stringify(ingredients))
+            console.log("Ingredient = " + JSON.stringify(ingredients))
             index++
         }
         const url = "http://localhost:8080/api/ingredientlist"
@@ -67,118 +79,135 @@ class PostRecipe extends Component {
     }
 
 
-
-
-    handleChangeIngredientAmount(e, index){
-        this.state.ingredientAmount[index]=e.target.value
+    handleChangeIngredientAmount(e, index) {
+        this.state.ingredientAmount[index] = e.target.value
         this.setState({ingredientAmount: this.state.ingredientAmount})
 
     }
-    handleChangeIngredientMeasureType(e, index){
-        this.state.ingredientMeasureType[index]=e.target.value
+
+    handleChangeIngredientMeasureType(e, index) {
+        this.state.ingredientMeasureType[index] = e.target.value
         this.setState({ingredientMeasureType: this.state.ingredientMeasureType})
 
     }
-    handleChangeIngredientName(e, index){
-        this.state.ingredientName[index]=e.target.value
+
+    handleChangeIngredientName(e, index) {
+        this.state.ingredientName[index] = e.target.value
         this.setState({ingredientName: this.state.ingredientName})
 
     }
-    handleChange(event){
+
+    handleChange(event) {
         const {name, value} = event.target
         this.setState({
-            [name] : value
+            [name]: value
         })
     }
-    
+
 
     render() {
         return (
             <form name="AddRecipe" className="form-recipe" /*onSubmit={this.handleSubmit}*/>
                 <div>
-                    <table>
+                    <table className={"editingTable"}>
                         <tbody>
-                            <tr>
-                <p>Name: </p>
-                    <input type="text"
-                           value={this.state.name}
-                           name="name"
-                           id = "namefield"
-                           onChange={this.handleChange}/>
-                            </tr>
-                            <tr>
+                        <tr>
+                            <br/>
+                            Reseptin nimi:
+                            <br/><input type="text"
+                                   value={this.state.name}
+                                   name="name"
+                                   id="namefield"
+                                   onChange={this.handleChange}/>
+                        </tr>
+                        <tr>
+                            <br/>
+                            Aineosat:
 
-                <p>Ingredients: </p>
-                            </tr>
-                            <tr>
-                                <td>
-                        {
-                    this.state.ingredientAmount.map((ingredient, index)=>{
-                        return (
-                            <div key ={index}>
-                                Amount<input onChange={(e)=>this.handleChangeIngredientAmount(e, index)} value = {ingredient}/>
-                            </div>
-                        )
-                    })
-                }
-                                </td>
-                                <td>
-                    {
-                        this.state.ingredientMeasureType.map((ingredient, index)=>{
-                            return (
-                                <div key ={index}>
-                                    Measure Type<input onChange={(e)=>this.handleChangeIngredientMeasureType(e, index)} value = {ingredient}/>
-                                </div>
-                            )
-                        })
-                    }
-                                </td>
-                                <td>
-                                    {
-                        this.state.ingredientName.map((ingredient, index)=>{
-                            return (
-                                <div key ={index}>
-                                    Ingredient Name<input onChange={(e)=>this.handleChangeIngredientName(e, index)} value = {ingredient}/>
-                                </div>
-                            )
-                        })
-                    }
-                                </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                {
+                                    this.state.ingredientName.map((ingredient, index) => {
+                                        return (
+                                            <div key={index}>
+                                                Ainesosa<input
+                                                onChange={(e) => this.handleChangeIngredientName(e, index)}
+                                                value={ingredient}/>
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </td>
 
-                            </tr>
-                            <tr>
-                    <input type="button"
-                           value="+"
-                           onClick={(e)=>this.addIngredient(e)} />
-                            </tr>
-                            <tr>
-                                <td>
-                <p>Preparation Time: </p>
-                                </td>
-                                <td>
-                    <input type="number"
-                           value={this.state.preparationTime}
-                           name="preparationTime"
-                           id="preparationtimefield"
-                           onChange={this.handleChange}/>
-                                </td>
-                            </tr>
-                <p>Preparation Instructions: </p>
-                    <input type="text"
-                           value={this.state.preparationInstructions}
-                           name="preparationInstructions"
-                           id="preparationinstructionfield"
-                           onChange={this.handleChange}/>
-                    <input type="button"
-                           name="addrecipe"
-                           value="Add Recipe"
-                           onClick={this.handleSubmit} />
+                            <td>
+                                {
+                                    this.state.ingredientAmount.map((ingredient, index) => {
+                                        return (
+                                            <div key={index}>
+                                                Määrä<input
+                                                onChange={(e) => this.handleChangeIngredientAmount(e, index)}
+                                                value={ingredient}/>
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </td>
+                            <td>
+                                {
+                                    this.state.ingredientMeasureType.map((ingredient, index) => {
+                                        return (
+                                            <div key={index}>
+                                                Mittayksikkö<input
+                                                onChange={(e) => this.handleChangeIngredientMeasureType(e, index)}
+                                                value={ingredient}/>
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <input type="button"
+                                   value="Lisää ainesosa"
+                                   onClick={(e) => this.addIngredient(e)}/>
+                        </tr>
+                        <tr>
+                            <br/>
+
+
+                            Valmistusaika:
+                            <br/>
+                            <input type="number"
+                                   value={this.state.preparationTime}
+                                   name="preparationTime"
+                                   id="preparationtimefield"
+                                   onChange={this.handleChange}/>
+
+
+                        </tr>
+                        <br/>
+                        Valmistusohjeet:
+                        <br/>
+
+                        <textarea rows="10" cols="50"
+                                  value={this.state.preparationInstructions}
+                                  name="preparationInstructions"
+                                  id="preparationinstructionfield"
+                                  onChange={this.handleChange}></textarea>
+                        <br/><br/><input type="button"
+                                         name="addrecipe"
+                                         value="Lisää resepti"
+                                         onClick={this.handleSubmit}/>
                         </tbody>
-                    <h2>{this.state.name} {this.state.ingredientAmount} {this.state.ingredientName} {this.state.ingredientMeasureType} {this.state.preparationTime} {this.state.preparationInstructions}</h2>
                     </table>
                 </div>
+                <h2>{this.state.kiitos}</h2>
             </form>
         )
     }
 }
+
 export default PostRecipe

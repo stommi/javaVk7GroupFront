@@ -5,8 +5,8 @@ class Editing extends Component {
     render() {
         return (
             <div>
-                <h2>Muokkaus</h2>
-                <p>Täällä voit muokata reseptejä!</p>
+                <h2>Lisää reseptejä</h2>
+                <p>Alla voit lisätä omia reseptejä!</p>
                 <PostRecipe/>
             </div>
         );

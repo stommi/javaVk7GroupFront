@@ -11,7 +11,6 @@ import Editing from "./components/pages/Editing";
 import Pictures from "./components/pages/Pictures";
 import Find from "./components/pages/Find";
 import Recipes from "./components/pages/Recipes";
-import RecipeOfTheDay from "./components/pages/RecipeOfTheDay";
 
 const routes = [
     {
@@ -30,7 +29,7 @@ const routes = [
 
     {
         path: "/editing",
-        sidebar: () => <div className={"activePage"}>Muokkaus</div>,
+        sidebar: () => <div className={"activePage"}>Lisää</div>,
         main: () => <Editing/>
     },
     {
@@ -52,7 +51,7 @@ export default function SidebarLeft() {
                 <div className="sidebartesti"
                     style={{
                         padding: "10px",
-                        background: "#ffa500",
+                        background: "rgba(255, 130, 11, 0.9)",
                     }}
                 >
                     <ul className="sidebarLinks">
@@ -63,7 +62,7 @@ export default function SidebarLeft() {
                             <Link to="/recipes">RESEPTIT</Link>
                         </li>
                         <li>
-                            <Link to="/editing">MUOKKAUS</Link>
+                            <Link to="/editing">LISÄÄ</Link>
                         </li>
                         <li>
                             <Link to="/pictures">KUVIA</Link>
