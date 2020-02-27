@@ -11,6 +11,7 @@ import Editing from "./components/pages/Editing";
 import Pictures from "./components/pages/Pictures";
 import Find from "./components/pages/Find";
 import Recipes from "./components/pages/Recipes";
+import RecipeOfTheDay from "./components/pages/RecipeOfTheDay";
 
 const routes = [
     {
